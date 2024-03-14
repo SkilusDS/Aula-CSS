@@ -1,0 +1,127 @@
+INDEX
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESPORTES</title>
+    <link rel="icon" href="assets/icon.jfif" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title"> ACABOU A BRINCADEIRA </h1>
+            <div class="menu">
+            
+                <a href="https://www.nfl.com/" target="_blank"> NFL </a>
+                <a href="https://kgesportes.com.br/" target="_blank"> Equipamentos </a>
+                <a href="https://www.salaooval.com.br/spfl-2024-grupos-diamante-anunciados/" target="_blank"> SPFL </a>
+                <a href="#" onclick="mostra()" target="_blank"> Sobre </a>
+    
+            </div>
+        </header>
+        
+        <div class="casa">
+
+            <div  id="sobre">
+                <button id="btnClose" onclick="fechar()"> 
+                    X
+                </button>
+                <h2 class="titleText">Momento do esporte</h2>
+                <p class="txt">O futebol americano é um esporte popular não só nos Estados Unidos como também esta presente outros países. O objetivo é marcar pontos levando uma bola para a end zone adversária ou chutando-a entre os postes de gol.</p>
+                <p class="txt"> Uma equipe pode marcar um touchdown (vale 6 pontos) quando um jogador atravessa a linha final com a bola ou a recebe na end zone.</p>
+                <p class="txt">Também é possível marcar pontos com gols de campo que valem 3 pontos, pontos extras que vale 1 ponto</p>
+            </div>
+
+        </div>
+        <div class="divmaior">
+            <div class="areafig1">
+                <img class="FA1" src="imagens/fa1.jpg">
+            </div>
+
+            <div class="areafig2">
+                <img class="FA2" src="Imagens/fa2.jpg">
+            </div>
+        </div>
+        
+
+
+        
+    </div>
+
+    <script src="js/scripts.js">
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+STYLE
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESPORTES</title>
+    <link rel="icon" href="assets/icon.jfif" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title"> ACABOU A BRINCADEIRA </h1>
+            <div class="menu">
+            
+                <a href="https://www.nfl.com/" target="_blank"> NFL </a>
+                <a href="https://kgesportes.com.br/" target="_blank"> Equipamentos </a>
+                <a href="https://www.salaooval.com.br/spfl-2024-grupos-diamante-anunciados/" target="_blank"> SPFL </a>
+                <a href="#" onclick="mostra()" target="_blank"> Sobre </a>
+    
+            </div>
+        </header>
+        
+        <div class="casa">
+
+            <div  id="sobre">
+                <button id="btnClose" onclick="fechar()"> 
+                    X
+                </button>
+                <h2 class="titleText">Momento do esporte</h2>
+                <p class="txt">O futebol americano é um esporte popular não só nos Estados Unidos como também esta presente outros países. O objetivo é marcar pontos levando uma bola para a end zone adversária ou chutando-a entre os postes de gol.</p>
+                <p class="txt"> Uma equipe pode marcar um touchdown (vale 6 pontos) quando um jogador atravessa a linha final com a bola ou a recebe na end zone.</p>
+                <p class="txt">Também é possível marcar pontos com gols de campo que valem 3 pontos, pontos extras que vale 1 ponto</p>
+            </div>
+
+        </div>
+        <div class="divmaior">
+            <div class="areafig1">
+                <img class="FA1" src="imagens/fa1.jpg">
+            </div>
+
+            <div class="areafig2">
+                <img class="FA2" src="Imagens/fa2.jpg">
+            </div>
+        </div>
+        
+
+
+        
+    </div>
+
+    <script src="js/scripts.js">
+
+    </script>
+</body>
+</html>
+
