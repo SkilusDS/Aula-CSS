@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="camisetas.css">
+    
+    <title>camisetas</title>
+    <style>
+        #txt{
+            margin: 50px;
+        }
+        #btn, #btn2, #btn3{
+            margin:40px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+
+            <h1 class="tittle"> Salve, e ai beleza? Nessa parte você consegue escolhe seu pano!</h1>
+
+            <div class="links">
+                <ul>
+                    <a href="index.html">HOME</a>
+                    <a href="Camisetas.html">CAMISETAS</a>
+                    <a href="Moletons.html">MOLETONS</a>
+                    <a href="contato.html">CONTATO</a>
+                    <a href="">QUEM SOMOS</a>
+                </ul>
+            </div>
+        </div>
+    <p id='txt'></p>
+    <p id="sub"></p>
+    <!--<button id='btn'onclick="mostraTxt()">Clique aqui</button> -->
+    <button id='btn'>Clique Aqui</button>
+    <button id='btn2'>SubString</button>
+    <button id='btn3'>Submit</button>
+    <button id='btn3'>Submit</button>
+    <button id='btn3'>Submit</button>
+    <script>
+        //var btn=document.getElementById('btn');
+        //var par=document.querySelector('p');
+
+
+        var btn=document.querySelector("#btn");
+        var par=document.querySelector('#txt');
+        var sub=document.querySelector("#sub");
+        var btn2=document.querySelector("#btn2");
+        var btn3=document.querySelector("#btn3");
+        var btn4=document.querySelector("#btn4");
+        var btn5=document.querySelector("#btn5");
+        var texto='Usando o JavaScript'
+        var cep="04215020"
+        var email='inbraza.ware@gmail.com';
+
+        btn.addEventListener('click', mostraTxt);
+        btn2.addEventListener('click', mostraSub);
+        btn3.addEventListener('click', alteraCep);
+        btn4.addEventListener('click', alteraCep);
+        btn5.addEventListener('click', alteraCep);        
+
+        function mostraTxt(){
+        par.innerHTML='<i>Usando Recursos do JavaScricpt<i>';
+        } 
+
+        function mostraSub(){
+        var pedaçoTexto=texto.substring(0,5);
+        
+        sub.innerText=pedaçoTexto;
+        } 
+        
+        function alteraCep(){
+            var parte1=cep.substring(0,5);
+            var parte2=cep.substring(6);
+            //var novocep=part1+parte2;
+            sub.innerText=parte1+parte2;
+        }
+
+        function localizar(){
+            var posicao=email.indexOf('@');
+            sub.innerText=posicao;
+        }
+
+        function substituir(){
+            var novocep=cep.replace("-","");
+            sub.innerText=novocep;
+        }
+
+
+    </script>
+
+</body>
+</html>
+

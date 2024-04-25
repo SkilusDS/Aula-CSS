@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos</title>    
+    <style>
+        #txt{
+            margin: 40px;
+            font-size: 1.9rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+<head>
+<body onload='mostra()'>
+    <p id='txt'></p>
+
+    <script>
+        var texto='Dia 1 de maio será um feriado - Dia do trabalhador';
+        var txt=document.querySelector("#txt");   
+        var posicao=0;
+        var cores=['blue','red', 'orange', 'green']
+
+        function mostra(){
+        var pedacoTexto=texto.substring(posicao);
+        txt.innerText=pedacoTexto;
+        posicao++; //posicao=posicao+1;
+        if(posicao>texto.length){
+            posicao=0;
+            txt.style.color='black';
+        }
+        else if(posicao==Math.floor(texto.length/2)){
+            var sorteio=Math.floor(Math.random()*4);
+            txt.style.color=cores[sorteio];
+        }
+        setTimeout(mostra,500);
+        }
+
+    </script>
+
+</body>
+</html>
