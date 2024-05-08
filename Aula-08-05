@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos</title>    
+    <style>
+        #div{
+            margin: 40px;
+        }
+        #btn{
+            margin: 30px;
+            font-size: 2.6rem;
+        }
+    </style>
+</head>
+<body>
+    <div id=""dv" ></div>
+    <!--<button id="btn" style=blue;" onclick="executa()">Clique aqui</button> -->
+    <button id=""btn">Clique aqui</button>
+
+<script>
+    const idades = [32, 45, 65, 18, 22, 95, 82];
+    var m=0, somaridades=0, n=1000
+    const qtde = idade.length; // quantidade elementos no vetor
+    var dv = document.getElementById('dv') ;
+    var btn = document.getElementById('btn');
+
+    btn.addEventListener('click', function(){
+        for(var i =0 ; i<qtde; i++){
+            // pegar a maoir idade
+            if(idades[i]>m){
+                m=idades[i];
+            }
+            if(idades[i]){
+                n=idades[i]
+            }
+
+            somaridades+= idades[i]
+            console.log("aqui")
+        }
+
+        media=somaridades/qtde;
+        var parag = document.createElement("p");
+        var conteudoNov = document.createTextNode("A maoir idade é"+m);
+        parag.appendChild(conteudoNov); // Adiciona o no do texto
+        document.body.insertBefore(parag, dv);;
+
+        var para = document.createElement("p")
+        var conteudoNov = document.createTextNode("A menor idade é"+n);
+        para.appendChild(conteudoNov);
+        document.body.insertBefore(para,dv);
+    </script>
+</body>
+</html>
