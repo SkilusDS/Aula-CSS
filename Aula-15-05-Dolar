@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotação</title>
+    
+    <style>*{
+        margin:0;
+        padding: 0;
+    }
+    body{
+        width:100vw;
+        height:100vh;
+        font-family: sans-serif;
+    }
+
+    h1{
+        margin:30px 0;
+        text-align: center;
+        font-size: 2.7rem;
+    }
+
+    div{
+    margin: 35px 150px;  
+    }
+    label{
+        display: block;
+        width:100px;
+        }
+    #btn{
+        margin:35px 150px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <h1>COTAÇÃO MOEDAS</h1>
+    <div>
+        <label>Informe o Valor</label>
+        <input type='number' id='valor'>
+    </div>
+    <div>
+        <label>Valor De Compra</label>
+        <input type='text' id='vlCompra' readonly>
+    </div>
+    <div>
+        <label>Valor De Venda</label>
+        <input type='text' id='vlVenda' readonly>
+    </div>
+    <button id='btn'>Clique Aqui</button>
+    
+    <script>
+        
+        var btn=document.getElementById('btn');
+        btn.addEventListener('click',function(){
+            var valor=document.getElementById('valor').value;
+        });
+
+    </script>
+
+</body>
+</html>

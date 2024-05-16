@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+    <style>
+        div{
+            margin:35px 140px
+        }
+        label{
+            width:100px;
+            display:inline-block;
+        }
+        #btn{
+            cursor: pointer;
+            margin:40px 180px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label>Data Completa</label>
+        <input type="text" id="dtCompleta" size='140' readonly>
+    </div>
+    <div>
+        <label>Dia Semana</label>
+        <input type="text" id="diaSemana" readonly>
+    </div>
+    <div>
+        <label>Dia</label>
+        <input type="text" id="dia" readonly>
+    </div>
+    <div>
+        <label>Mes</label>
+        <input type="text" id="nomeMes" readonly>
+    </div>
+    <div>
+        <label>Ano</label>
+        <input type="text" id="ano" readonly>
+    </div>
+    <button id="btn">Clique Aqui</button>
+    <script>
+        var nomeDias=['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sabado'];
+        var nomesMeses=['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho'];
+
+        var btn=document.getElementById('btn');
+        btn.addEventListener('click',function(){
+        var data=new Date();
+        document.getElementById('dtCompleta').value=data;
+        document.getElementById('dia').value=data.getDate();
+        document.getElementById('ano').value=data.getFullYear();
+
+        var numdia=data.getDay();
+        var nomedia=nomeDias[numdia];
+        document.getElementById('diaSemana').value=nomedia;
+        var nmes=data.getMonth();
+        var nomemes=nomesMeses[nmes];
+        document.getElementById('nomeMes').value=nomemes;
+        });
+
+
+    </script>
+
+    
+</body>
+</html>
